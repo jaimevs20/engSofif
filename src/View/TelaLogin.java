@@ -27,77 +27,84 @@ public class TelaLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        panelTopo = new javax.swing.JPanel();
         campoUsuario = new javax.swing.JTextField();
-        labelUsuario = new javax.swing.JLabel();
         campoSenha = new javax.swing.JPasswordField();
         labelSenha = new javax.swing.JLabel();
         buttonLogar = new javax.swing.JButton();
+        labelUsuario = new javax.swing.JLabel();
+        panelBg = new javax.swing.JPanel();
+        labelLogo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel1.setText("SoFiT");
+        panelTopo.setBackground(new java.awt.Color(255, 255, 255));
+        panelTopo.setLayout(null);
 
         campoUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campoUsuarioActionPerformed(evt);
             }
         });
-
-        labelUsuario.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        labelUsuario.setText("Usuário");
+        panelTopo.add(campoUsuario);
+        campoUsuario.setBounds(220, 230, 330, 33);
 
         campoSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campoSenhaActionPerformed(evt);
             }
         });
+        panelTopo.add(campoSenha);
+        campoSenha.setBounds(220, 300, 330, 31);
 
         labelSenha.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         labelSenha.setText("Senha");
+        panelTopo.add(labelSenha);
+        labelSenha.setBounds(220, 280, 43, 17);
 
-        buttonLogar.setText("Logar");
+        buttonLogar.setText("Entrar");
+        buttonLogar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonLogarActionPerformed(evt);
+            }
+        });
+        panelTopo.add(buttonLogar);
+        buttonLogar.setBounds(310, 350, 133, 23);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(233, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(labelSenha)
-                    .addComponent(labelUsuario)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(jLabel1)
-                            .addGap(347, 347, 347))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(campoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(207, 207, 207)))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(buttonLogar)
-                        .addComponent(campoSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        labelUsuario.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        labelUsuario.setText("Usuário");
+        panelTopo.add(labelUsuario);
+        labelUsuario.setBounds(220, 210, 52, 17);
+
+        getContentPane().add(panelTopo, java.awt.BorderLayout.CENTER);
+
+        panelBg.setBackground(new java.awt.Color(0, 255, 0));
+        panelBg.setPreferredSize(new java.awt.Dimension(694, 30));
+
+        labelLogo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        labelLogo.setForeground(new java.awt.Color(255, 255, 255));
+        labelLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelLogo.setText("SoFiT");
+
+        javax.swing.GroupLayout panelBgLayout = new javax.swing.GroupLayout(panelBg);
+        panelBg.setLayout(panelBgLayout);
+        panelBgLayout.setHorizontalGroup(
+            panelBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelBgLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelLogo)
+                .addContainerGap(738, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabel1)
-                .addGap(52, 52, 52)
-                .addComponent(labelUsuario)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(campoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addComponent(labelSenha)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(campoSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(buttonLogar)
-                .addContainerGap(224, Short.MAX_VALUE))
+        panelBgLayout.setVerticalGroup(
+            panelBgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBgLayout.createSequentialGroup()
+                .addGap(0, 8, Short.MAX_VALUE)
+                .addComponent(labelLogo))
         );
+
+        getContentPane().add(panelBg, java.awt.BorderLayout.PAGE_START);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -109,6 +116,10 @@ public class TelaLogin extends javax.swing.JFrame {
     private void campoSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoSenhaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_campoSenhaActionPerformed
+
+    private void buttonLogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonLogarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonLogarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -149,8 +160,10 @@ public class TelaLogin extends javax.swing.JFrame {
     private javax.swing.JButton buttonLogar;
     private javax.swing.JPasswordField campoSenha;
     private javax.swing.JTextField campoUsuario;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel labelLogo;
     private javax.swing.JLabel labelSenha;
     private javax.swing.JLabel labelUsuario;
+    private javax.swing.JPanel panelBg;
+    private javax.swing.JPanel panelTopo;
     // End of variables declaration//GEN-END:variables
 }

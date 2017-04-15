@@ -5,7 +5,7 @@
  */
 package teste;
 
-import View.TelaLogin;
+import View.TelaEditarSecretario;
 
 /**
  *
@@ -17,7 +17,7 @@ public class Teste {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new TelaLogin().setVisible(true);
+        new TelaEditarSecretario().setVisible(true);
     }
     
 }
