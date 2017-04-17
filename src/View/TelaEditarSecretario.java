@@ -28,33 +28,33 @@ public class TelaEditarSecretario extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        campoUsuario = new javax.swing.JTextField();
+        campoInicioContrato = new javax.swing.JTextField();
         campoSenha = new javax.swing.JPasswordField();
         labelSenha = new javax.swing.JLabel();
-        buttonLogar = new javax.swing.JButton();
-        labelUsuario = new javax.swing.JLabel();
-        campoUsuario1 = new javax.swing.JTextField();
-        labelUsuario1 = new javax.swing.JLabel();
-        campoUsuario2 = new javax.swing.JTextField();
-        labelUsuario2 = new javax.swing.JLabel();
-        labelSenha1 = new javax.swing.JLabel();
-        campoSenha1 = new javax.swing.JPasswordField();
-        campoUsuario3 = new javax.swing.JTextField();
-        labelUsuario3 = new javax.swing.JLabel();
-        labelUsuario4 = new javax.swing.JLabel();
-        campoUsuario4 = new javax.swing.JTextField();
-        labelUsuario5 = new javax.swing.JLabel();
-        campoUsuario5 = new javax.swing.JTextField();
-        labelUsuario6 = new javax.swing.JLabel();
-        campoUsuario6 = new javax.swing.JTextField();
-        campoUsuario7 = new javax.swing.JTextField();
-        labelUsuario7 = new javax.swing.JLabel();
-        labelUsuario8 = new javax.swing.JLabel();
-        campoUsuario8 = new javax.swing.JTextField();
-        campoUsuario9 = new javax.swing.JTextField();
+        buttonCancelar = new javax.swing.JButton();
+        labelInicioContrato = new javax.swing.JLabel();
+        campoTerminoContrato = new javax.swing.JTextField();
+        labelTerminoContrato = new javax.swing.JLabel();
+        campoEmail = new javax.swing.JTextField();
+        labelEmail = new javax.swing.JLabel();
+        labelConfirmacaoSenha = new javax.swing.JLabel();
+        campoConfirmacaoSenha = new javax.swing.JPasswordField();
+        campoNumContrato = new javax.swing.JTextField();
+        labelNumContrato = new javax.swing.JLabel();
+        labelEndereco = new javax.swing.JLabel();
+        campoEndereco = new javax.swing.JTextField();
+        labelCEP = new javax.swing.JLabel();
+        campoCEP = new javax.swing.JTextField();
+        labelRG = new javax.swing.JLabel();
+        campoRG = new javax.swing.JTextField();
+        campoCPF = new javax.swing.JTextField();
+        labelCPF = new javax.swing.JLabel();
+        labelNome = new javax.swing.JLabel();
+        campoNome = new javax.swing.JTextField();
+        campoDataNasc = new javax.swing.JTextField();
         labelUsuario9 = new javax.swing.JLabel();
-        buttonLogar1 = new javax.swing.JButton();
-        labelUsuario10 = new javax.swing.JLabel();
+        buttonSalvar = new javax.swing.JButton();
+        labelDataNasc = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -65,13 +65,13 @@ public class TelaEditarSecretario extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
 
-        campoUsuario.addActionListener(new java.awt.event.ActionListener() {
+        campoInicioContrato.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoUsuarioActionPerformed(evt);
+                campoInicioContratoActionPerformed(evt);
             }
         });
-        jPanel1.add(campoUsuario);
-        campoUsuario.setBounds(170, 340, 200, 33);
+        jPanel1.add(campoInicioContrato);
+        campoInicioContrato.setBounds(170, 340, 200, 33);
 
         campoSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,167 +82,167 @@ public class TelaEditarSecretario extends javax.swing.JFrame {
         campoSenha.setBounds(170, 410, 200, 31);
 
         labelSenha.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        labelSenha.setText("Senha");
+        labelSenha.setText("Senha:");
         jPanel1.add(labelSenha);
-        labelSenha.setBounds(170, 390, 43, 17);
+        labelSenha.setBounds(170, 390, 50, 17);
 
-        buttonLogar.setText("Cancelar");
-        buttonLogar.addActionListener(new java.awt.event.ActionListener() {
+        buttonCancelar.setText("Cancelar");
+        buttonCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonLogarActionPerformed(evt);
+                buttonCancelarActionPerformed(evt);
             }
         });
-        jPanel1.add(buttonLogar);
-        buttonLogar.setBounds(440, 470, 133, 23);
+        jPanel1.add(buttonCancelar);
+        buttonCancelar.setBounds(440, 470, 133, 23);
 
-        labelUsuario.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        labelUsuario.setText("Inicio de contrato:");
-        jPanel1.add(labelUsuario);
-        labelUsuario.setBounds(170, 320, 140, 17);
+        labelInicioContrato.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        labelInicioContrato.setText("Inicio de contrato:");
+        jPanel1.add(labelInicioContrato);
+        labelInicioContrato.setBounds(170, 320, 140, 17);
 
-        campoUsuario1.addActionListener(new java.awt.event.ActionListener() {
+        campoTerminoContrato.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoUsuario1ActionPerformed(evt);
+                campoTerminoContratoActionPerformed(evt);
             }
         });
-        jPanel1.add(campoUsuario1);
-        campoUsuario1.setBounds(400, 340, 200, 33);
+        jPanel1.add(campoTerminoContrato);
+        campoTerminoContrato.setBounds(400, 340, 200, 33);
 
-        labelUsuario1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        labelUsuario1.setText("Termino de contrato:");
-        jPanel1.add(labelUsuario1);
-        labelUsuario1.setBounds(400, 320, 150, 17);
+        labelTerminoContrato.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        labelTerminoContrato.setText("Termino de contrato:");
+        jPanel1.add(labelTerminoContrato);
+        labelTerminoContrato.setBounds(400, 320, 150, 17);
 
-        campoUsuario2.addActionListener(new java.awt.event.ActionListener() {
+        campoEmail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoUsuario2ActionPerformed(evt);
+                campoEmailActionPerformed(evt);
             }
         });
-        jPanel1.add(campoUsuario2);
-        campoUsuario2.setBounds(170, 280, 250, 33);
+        jPanel1.add(campoEmail);
+        campoEmail.setBounds(170, 280, 250, 33);
 
-        labelUsuario2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        labelUsuario2.setText("Email:");
-        jPanel1.add(labelUsuario2);
-        labelUsuario2.setBounds(170, 260, 41, 17);
+        labelEmail.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        labelEmail.setText("Email:");
+        jPanel1.add(labelEmail);
+        labelEmail.setBounds(170, 260, 41, 17);
 
-        labelSenha1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        labelSenha1.setText("Confirmação de Senha:");
-        jPanel1.add(labelSenha1);
-        labelSenha1.setBounds(400, 390, 170, 17);
+        labelConfirmacaoSenha.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        labelConfirmacaoSenha.setText("Confirmação de Senha:");
+        jPanel1.add(labelConfirmacaoSenha);
+        labelConfirmacaoSenha.setBounds(400, 390, 170, 17);
 
-        campoSenha1.addActionListener(new java.awt.event.ActionListener() {
+        campoConfirmacaoSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoSenha1ActionPerformed(evt);
+                campoConfirmacaoSenhaActionPerformed(evt);
             }
         });
-        jPanel1.add(campoSenha1);
-        campoSenha1.setBounds(400, 410, 200, 31);
+        jPanel1.add(campoConfirmacaoSenha);
+        campoConfirmacaoSenha.setBounds(400, 410, 200, 31);
 
-        campoUsuario3.addActionListener(new java.awt.event.ActionListener() {
+        campoNumContrato.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoUsuario3ActionPerformed(evt);
+                campoNumContratoActionPerformed(evt);
             }
         });
-        jPanel1.add(campoUsuario3);
-        campoUsuario3.setBounds(440, 280, 160, 33);
+        jPanel1.add(campoNumContrato);
+        campoNumContrato.setBounds(440, 280, 160, 33);
 
-        labelUsuario3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        labelUsuario3.setText("Nº de contrato:");
-        jPanel1.add(labelUsuario3);
-        labelUsuario3.setBounds(440, 260, 120, 17);
+        labelNumContrato.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        labelNumContrato.setText("Nº de contrato:");
+        jPanel1.add(labelNumContrato);
+        labelNumContrato.setBounds(440, 260, 120, 17);
 
-        labelUsuario4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        labelUsuario4.setText("Endereço:");
-        jPanel1.add(labelUsuario4);
-        labelUsuario4.setBounds(170, 200, 90, 17);
+        labelEndereco.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        labelEndereco.setText("Endereço:");
+        jPanel1.add(labelEndereco);
+        labelEndereco.setBounds(170, 200, 90, 17);
 
-        campoUsuario4.addActionListener(new java.awt.event.ActionListener() {
+        campoEndereco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoUsuario4ActionPerformed(evt);
+                campoEnderecoActionPerformed(evt);
             }
         });
-        jPanel1.add(campoUsuario4);
-        campoUsuario4.setBounds(170, 220, 290, 33);
+        jPanel1.add(campoEndereco);
+        campoEndereco.setBounds(170, 220, 290, 33);
 
-        labelUsuario5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        labelUsuario5.setText("CEP:");
-        jPanel1.add(labelUsuario5);
-        labelUsuario5.setBounds(480, 200, 120, 17);
+        labelCEP.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        labelCEP.setText("CEP:");
+        jPanel1.add(labelCEP);
+        labelCEP.setBounds(480, 200, 120, 17);
 
-        campoUsuario5.addActionListener(new java.awt.event.ActionListener() {
+        campoCEP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoUsuario5ActionPerformed(evt);
+                campoCEPActionPerformed(evt);
             }
         });
-        jPanel1.add(campoUsuario5);
-        campoUsuario5.setBounds(480, 220, 120, 33);
+        jPanel1.add(campoCEP);
+        campoCEP.setBounds(480, 220, 120, 33);
 
-        labelUsuario6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        labelUsuario6.setText("RG:");
-        jPanel1.add(labelUsuario6);
-        labelUsuario6.setBounds(170, 140, 140, 17);
+        labelRG.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        labelRG.setText("RG:");
+        jPanel1.add(labelRG);
+        labelRG.setBounds(170, 140, 140, 17);
 
-        campoUsuario6.addActionListener(new java.awt.event.ActionListener() {
+        campoRG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoUsuario6ActionPerformed(evt);
+                campoRGActionPerformed(evt);
             }
         });
-        jPanel1.add(campoUsuario6);
-        campoUsuario6.setBounds(170, 160, 200, 33);
+        jPanel1.add(campoRG);
+        campoRG.setBounds(170, 160, 200, 33);
 
-        campoUsuario7.addActionListener(new java.awt.event.ActionListener() {
+        campoCPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoUsuario7ActionPerformed(evt);
+                campoCPFActionPerformed(evt);
             }
         });
-        jPanel1.add(campoUsuario7);
-        campoUsuario7.setBounds(400, 160, 200, 33);
+        jPanel1.add(campoCPF);
+        campoCPF.setBounds(400, 160, 200, 33);
 
-        labelUsuario7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        labelUsuario7.setText("CPF:");
-        jPanel1.add(labelUsuario7);
-        labelUsuario7.setBounds(400, 140, 150, 17);
+        labelCPF.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        labelCPF.setText("CPF:");
+        jPanel1.add(labelCPF);
+        labelCPF.setBounds(400, 140, 150, 17);
 
-        labelUsuario8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        labelUsuario8.setText("Nome:");
-        jPanel1.add(labelUsuario8);
-        labelUsuario8.setBounds(170, 80, 140, 17);
+        labelNome.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        labelNome.setText("Nome:");
+        jPanel1.add(labelNome);
+        labelNome.setBounds(170, 80, 140, 17);
 
-        campoUsuario8.addActionListener(new java.awt.event.ActionListener() {
+        campoNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoUsuario8ActionPerformed(evt);
+                campoNomeActionPerformed(evt);
             }
         });
-        jPanel1.add(campoUsuario8);
-        campoUsuario8.setBounds(170, 100, 200, 33);
+        jPanel1.add(campoNome);
+        campoNome.setBounds(170, 100, 200, 33);
 
-        campoUsuario9.addActionListener(new java.awt.event.ActionListener() {
+        campoDataNasc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoUsuario9ActionPerformed(evt);
+                campoDataNascActionPerformed(evt);
             }
         });
-        jPanel1.add(campoUsuario9);
-        campoUsuario9.setBounds(400, 100, 200, 33);
+        jPanel1.add(campoDataNasc);
+        campoDataNasc.setBounds(400, 100, 200, 33);
 
         labelUsuario9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         labelUsuario9.setText("Editar Secretário");
         jPanel1.add(labelUsuario9);
         labelUsuario9.setBounds(120, 20, 220, 40);
 
-        buttonLogar1.setText("Salvar");
-        buttonLogar1.addActionListener(new java.awt.event.ActionListener() {
+        buttonSalvar.setText("Salvar");
+        buttonSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonLogar1ActionPerformed(evt);
+                buttonSalvarActionPerformed(evt);
             }
         });
-        jPanel1.add(buttonLogar1);
-        buttonLogar1.setBounds(580, 470, 133, 23);
+        jPanel1.add(buttonSalvar);
+        buttonSalvar.setBounds(580, 470, 133, 23);
 
-        labelUsuario10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        labelUsuario10.setText("Data de nascimento:");
-        jPanel1.add(labelUsuario10);
-        labelUsuario10.setBounds(400, 80, 150, 17);
+        labelDataNasc.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        labelDataNasc.setText("Data de nascimento:");
+        jPanel1.add(labelDataNasc);
+        labelDataNasc.setBounds(400, 80, 150, 17);
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
@@ -275,61 +275,61 @@ public class TelaEditarSecretario extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void campoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoUsuarioActionPerformed
+    private void campoInicioContratoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoInicioContratoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campoUsuarioActionPerformed
+    }//GEN-LAST:event_campoInicioContratoActionPerformed
 
     private void campoSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoSenhaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_campoSenhaActionPerformed
 
-    private void buttonLogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonLogarActionPerformed
+    private void buttonCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCancelarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_buttonLogarActionPerformed
+    }//GEN-LAST:event_buttonCancelarActionPerformed
 
-    private void campoUsuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoUsuario1ActionPerformed
+    private void campoTerminoContratoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoTerminoContratoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campoUsuario1ActionPerformed
+    }//GEN-LAST:event_campoTerminoContratoActionPerformed
 
-    private void campoUsuario2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoUsuario2ActionPerformed
+    private void campoEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoEmailActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campoUsuario2ActionPerformed
+    }//GEN-LAST:event_campoEmailActionPerformed
 
-    private void campoSenha1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoSenha1ActionPerformed
+    private void campoConfirmacaoSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoConfirmacaoSenhaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campoSenha1ActionPerformed
+    }//GEN-LAST:event_campoConfirmacaoSenhaActionPerformed
 
-    private void campoUsuario3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoUsuario3ActionPerformed
+    private void campoNumContratoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoNumContratoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campoUsuario3ActionPerformed
+    }//GEN-LAST:event_campoNumContratoActionPerformed
 
-    private void campoUsuario4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoUsuario4ActionPerformed
+    private void campoEnderecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoEnderecoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campoUsuario4ActionPerformed
+    }//GEN-LAST:event_campoEnderecoActionPerformed
 
-    private void campoUsuario5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoUsuario5ActionPerformed
+    private void campoCEPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoCEPActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campoUsuario5ActionPerformed
+    }//GEN-LAST:event_campoCEPActionPerformed
 
-    private void campoUsuario6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoUsuario6ActionPerformed
+    private void campoRGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoRGActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campoUsuario6ActionPerformed
+    }//GEN-LAST:event_campoRGActionPerformed
 
-    private void campoUsuario7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoUsuario7ActionPerformed
+    private void campoCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoCPFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campoUsuario7ActionPerformed
+    }//GEN-LAST:event_campoCPFActionPerformed
 
-    private void campoUsuario8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoUsuario8ActionPerformed
+    private void campoNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoNomeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campoUsuario8ActionPerformed
+    }//GEN-LAST:event_campoNomeActionPerformed
 
-    private void campoUsuario9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoUsuario9ActionPerformed
+    private void campoDataNascActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoDataNascActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campoUsuario9ActionPerformed
+    }//GEN-LAST:event_campoDataNascActionPerformed
 
-    private void buttonLogar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonLogar1ActionPerformed
+    private void buttonSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSalvarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_buttonLogar1ActionPerformed
+    }//GEN-LAST:event_buttonSalvarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -368,35 +368,35 @@ public class TelaEditarSecretario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton buttonLogar;
-    private javax.swing.JButton buttonLogar1;
+    private javax.swing.JButton buttonCancelar;
+    private javax.swing.JButton buttonSalvar;
+    private javax.swing.JTextField campoCEP;
+    private javax.swing.JTextField campoCPF;
+    private javax.swing.JPasswordField campoConfirmacaoSenha;
+    private javax.swing.JTextField campoDataNasc;
+    private javax.swing.JTextField campoEmail;
+    private javax.swing.JTextField campoEndereco;
+    private javax.swing.JTextField campoInicioContrato;
+    private javax.swing.JTextField campoNome;
+    private javax.swing.JTextField campoNumContrato;
+    private javax.swing.JTextField campoRG;
     private javax.swing.JPasswordField campoSenha;
-    private javax.swing.JPasswordField campoSenha1;
-    private javax.swing.JTextField campoUsuario;
-    private javax.swing.JTextField campoUsuario1;
-    private javax.swing.JTextField campoUsuario2;
-    private javax.swing.JTextField campoUsuario3;
-    private javax.swing.JTextField campoUsuario4;
-    private javax.swing.JTextField campoUsuario5;
-    private javax.swing.JTextField campoUsuario6;
-    private javax.swing.JTextField campoUsuario7;
-    private javax.swing.JTextField campoUsuario8;
-    private javax.swing.JTextField campoUsuario9;
+    private javax.swing.JTextField campoTerminoContrato;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel labelCEP;
+    private javax.swing.JLabel labelCPF;
+    private javax.swing.JLabel labelConfirmacaoSenha;
+    private javax.swing.JLabel labelDataNasc;
+    private javax.swing.JLabel labelEmail;
+    private javax.swing.JLabel labelEndereco;
+    private javax.swing.JLabel labelInicioContrato;
+    private javax.swing.JLabel labelNome;
+    private javax.swing.JLabel labelNumContrato;
+    private javax.swing.JLabel labelRG;
     private javax.swing.JLabel labelSenha;
-    private javax.swing.JLabel labelSenha1;
-    private javax.swing.JLabel labelUsuario;
-    private javax.swing.JLabel labelUsuario1;
-    private javax.swing.JLabel labelUsuario10;
-    private javax.swing.JLabel labelUsuario2;
-    private javax.swing.JLabel labelUsuario3;
-    private javax.swing.JLabel labelUsuario4;
-    private javax.swing.JLabel labelUsuario5;
-    private javax.swing.JLabel labelUsuario6;
-    private javax.swing.JLabel labelUsuario7;
-    private javax.swing.JLabel labelUsuario8;
+    private javax.swing.JLabel labelTerminoContrato;
     private javax.swing.JLabel labelUsuario9;
     // End of variables declaration//GEN-END:variables
 }
